@@ -18,37 +18,37 @@ enum class Months {
 
 std::string monthToStr(Months m) {
     switch (m) {
-    case Months::JANUARY:   return "Январь";
-    case Months::FEBRUARY:  return "Февраль";
-    case Months::MARCH:     return "Март";
-    case Months::APRIL:     return "Апрель";
-    case Months::MAY:       return "Май";
-    case Months::JUNE:      return "Июнь";
-    case Months::JULY:      return "Июль";
-    case Months::AUGUST:    return "Август";
-    case Months::SEPTEMBER: return "Сентябрь";
-    case Months::OCTOBER:   return "Октябрь";
-    case Months::NOVEMBER:  return "Ноябрь";
-    case Months::DECEMBER:  return "Декабрь";
-    default:                return "Неизвестный месяц";
+    case Months::JANUARY:   return "РЇРЅРІР°СЂСЊ";
+    case Months::FEBRUARY:  return "Р¤РµРІСЂР°Р»СЊ";
+    case Months::MARCH:     return "РњР°СЂС‚";
+    case Months::APRIL:     return "РђРїСЂРµР»СЊ";
+    case Months::MAY:       return "РњР°Р№";
+    case Months::JUNE:      return "РСЋРЅСЊ";
+    case Months::JULY:      return "РСЋР»СЊ";
+    case Months::AUGUST:    return "РђРІРіСѓСЃС‚";
+    case Months::SEPTEMBER: return "РЎРµРЅС‚СЏР±СЂСЊ";
+    case Months::OCTOBER:   return "РћРєС‚СЏР±СЂСЊ";
+    case Months::NOVEMBER:  return "РќРѕСЏР±СЂСЊ";
+    case Months::DECEMBER:  return "Р”РµРєР°Р±СЂСЊ";
+    default:                return "РќРµРёР·РІРµСЃС‚РЅС‹Р№ РјРµСЃСЏС†";
     }
 }
 
 void run() {
     int num{ -1 };
     while (num != 0) {
-        std::cout << "Введите номер месяца: ";
+        std::cout << "Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РјРµСЃСЏС†Р°: ";
         std::cin >> num;
         if (num == 0) break;
         if (num > 12 || num < 1) {
-            std::cout << "Неправильный номер!\n";
+            std::cout << "РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ РЅРѕРјРµСЂ!\n";
         }
         else {
             Months currMonth = static_cast<Months>(num);
             std::cout << monthToStr(currMonth) << "\n";
         }
     }
-    std::cout << "До свидания\n";
+    std::cout << "Р”Рѕ СЃРІРёРґР°РЅРёСЏ\n";
 }
 
 int main() {
